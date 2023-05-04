@@ -1,0 +1,15 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\.idea\\.idea.courseSearch.dir",
+    "\\.idea\\.idea.courseSearch.dir\\.idea",
+    "\\bin",
+    "\\bin\\Debug",
+    "\\bin\\Debug\\net7.0\\runtimes",
+    "\\Controllers",
+    "\\Views",
+    "\\Views\\Home"
+  ],
+  "SelectedNode": "\\Controllers\\HomeController.cs",
+  "PreviewInSolutionExplorer": false
+}

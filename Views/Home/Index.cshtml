@@ -1,0 +1,354 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@model subject_required;
+
+
+ <div class="row">
+
+        <div class="col">
+            <div class="text-center">
+                <h1 class="display-6">APS/AS Calculator</h1>
+            </div>
+        </div>
+   
+
+</div>
+
+
+<div class="table-responsive pt-3">
+<form method="post" enctype="multipart/form-data" id="myForm">
+
+
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th>Subject</th>
+      <th>Level</th>
+      <th>Percentage</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+         <select style="width: 85%"  name="subject1" id="subject1" aria-placeholder="Select a subject">
+                <option selected disabled>Select Subject</option>
+                @foreach (var item in ViewBag.subjectOptions)
+                {
+                    <option value="@item.name">@item.name</option>
+                }
+         </select>
+
+
+      </td>
+      <td>
+        
+          <select class="form-select form-select-sm" aria-label=".form-select-sm example" style="width: 50%" name="level1">
+                <option selected disabled>Select Level</option>
+                @for (int i = 1; i <= 7; i++)
+                {
+                    <option value="@i">@i</option>
+                }
+          </select>
+
+      </td>
+      <td>
+
+
+        <div class="input-group flex-nowrap input-group-sm mb-3" style="width: 50%">
+          <input type="number" pattern="[0-9]" class="form-control" placeholder="Percent" name="percent" min="1" max="100">
+          <span class="input-group-text" id="addon-wrapping">%</span>
+        </div>
+
+      </td>
+    </tr>
+    <tr>
+      <td> 
+        <select style="width: 85%"  name="subject2">
+                <option selected disabled>Select Subject</option>
+                @foreach (var item in ViewBag.subjectOptions)
+                {
+                    <option value="@item.id">@item.name</option>
+                }
+         </select>
+     </td>
+      <td>
+        
+         <select class="form-select form-select-sm" aria-label=".form-select-sm example" style="width: 50%" name="level2">
+                <option selected disabled>Select Level</option>
+                @for (int i = 1; i <= 7; i++)
+                {
+                    <option value="@i">@i</option>
+                }
+          </select>
+
+      </td>
+      <td>
+
+        <div class="input-group flex-nowrap input-group-sm mb-3" style="width: 50%">
+           <input type="number" pattern="[0-9]" class="form-control" placeholder="Percent" name="percent" min="1" max="100">
+          <span class="input-group-text" id="addon-wrapping">%</span>
+        </div>
+
+      </td>
+    </tr>
+    <tr>
+      <td>
+        
+         <select style="width: 85%"  name="subject">
+                <option selected disabled>Select Subject</option>
+                @foreach (var item in ViewBag.subjectOptions)
+                {
+                    <option value="@item.id">@item.name</option>
+                }
+         </select>
+
+      </td>
+      <td>
+        
+         <select class="form-select form-select-sm" aria-label=".form-select-sm example" style="width: 50%" name="level">
+                <option selected disabled>Select Level</option>
+                @for (int i = 1; i <= 7; i++)
+                {
+                    <option value="@i">@i</option>
+                }
+          </select>
+
+      </td>
+      <td>
+
+       <div class="input-group flex-nowrap input-group-sm mb-3" style="width: 50%">
+           <input type="number" pattern="[0-9]" class="form-control" placeholder="Percent" name="percent" min="1" max="100">
+          <span class="input-group-text" id="addon-wrapping">%</span>
+        </div>
+
+      </td>
+    </tr>
+    <tr>
+      <td>
+        
+         <select style="width: 85%"  name="subject">
+                <option selected disabled>Select Subject</option>
+                @foreach (var item in ViewBag.subjectOptions)
+                {
+                    <option value="@item.id">@item.name</option>
+                }
+         </select>
+
+      </td>
+      <td>
+        
+         <select class="form-select form-select-sm" aria-label=".form-select-sm example" style="width: 50%" name="level">
+                <option selected disabled>Select Level</option>
+                @for (int i = 1; i <= 7; i++)
+                {
+                    <option value="@i">@i</option>
+                }
+          </select>
+
+      </td>
+      <td>
+
+        <div class="input-group flex-nowrap input-group-sm mb-3" style="width: 50%">
+            <input type="number" pattern="[0-9]" class="form-control" placeholder="Percent" name="percent" min="1" max="100">
+          <span class="input-group-text" id="addon-wrapping">%</span>
+        </div>
+
+      </td>
+    </tr>
+    <tr>
+      <td>
+        
+         <select style="width: 85%"  name="subject">
+                <option selected disabled>Select Subject</option>
+                @foreach (var item in ViewBag.subjectOptions)
+                {
+                    <option value="@item.id">@item.name</option>
+                }
+         </select>
+
+      </td>
+      <td>
+        
+         <select class="form-select form-select-sm" aria-label=".form-select-sm example" style="width: 50%" name="level">
+                <option selected disabled>Select Level</option>
+                @for (int i = 1; i <= 7; i++)
+                {
+                    <option value="@i">@i</option>
+                }
+          </select>
+
+      </td>
+      <td>
+
+         <div class="input-group flex-nowrap input-group-sm mb-3" style="width: 50%">
+            <input type="number" pattern="[0-9]" class="form-control" placeholder="Percent" name="percent" min="1" max="100">
+          <span class="input-group-text" id="addon-wrapping">%</span>
+          </div>
+
+      </td>
+    </tr>
+    <tr>
+      <td>
+        
+         <select style="width: 85%"  name="subject">
+                <option selected disabled>Select Subject</option>
+                @foreach (var item in ViewBag.subjectOptions)
+                {
+                    <option value="@item.id">@item.name</option>
+                }
+         </select>
+
+      </td>
+      <td>
+        
+          <select class="form-select form-select-sm" aria-label=".form-select-sm example" style="width: 50%" name="level">
+                <option selected disabled>Select Level</option>
+                @for (int i = 1; i <= 7; i++)
+                {
+                    <option value="@i">@i</option>
+                }
+          </select>
+
+      </td>
+      <td>
+
+        <div class="input-group flex-nowrap input-group-sm mb-3" style="width: 50%">
+           <input type="number" pattern="[0-9]" class="form-control" placeholder="Percent" name="percent" min="1" max="100">
+          <span class="input-group-text" id="addon-wrapping">%</span>
+        </div>
+
+      </td>
+    </tr>
+    <tr>
+      <td>
+        
+         <select style="width: 85%"  name="subject">
+                <option selected disabled>Select Subject</option>
+                @foreach (var item in ViewBag.subjectOptions)
+                {
+                    <option value="@item.id">@item.name</option>
+                }
+         </select>
+
+      </td>
+      <td>
+        
+          <select class="form-select form-select-sm" aria-label=".form-select-sm example" style="width: 50%" name="level">
+                <option selected disabled>Select Level</option>
+                @for (int i = 1; i <= 7; i++)
+                {
+                    <option value="@i">@i</option>
+                }
+          </select>
+
+      </td>
+      <td>
+
+          <div class="input-group flex-nowrap input-group-sm mb-3" style="width: 50%">
+             <input type="number" pattern="[0-9]" class="form-control" placeholder="Percent" name="percent" min="1" max="100">
+          <span class="input-group-text" id="addon-wrapping">%</span>
+          </div>
+
+
+      </td>
+    </tr>
+
+      <tr>
+      <td>
+          <h2 style="text-align:center"><button type="submit" class="btn btn-primary" onclick="downloadPDF()">Download PDF</button></h2>
+                       
+      </td>
+      <td>
+        
+          <h6> APS: <span id="totalLevel">   </span> </h6>
+      </td>
+      <td>
+         <h6> AS: <span id="totalPerc">   </span> </h6>  
+
+      </td>
+    </tr>
+
+  </tbody>
+</table>
+
+</form>
+</div>
+
+<div class="row">
+
+        <div class="col">
+            <div class="text-center">
+                <h1 class="display-6">User Details</h1>
+            </div>
+        </div>
+   
+
+</div>
+
+
+
+<div class="table-responsive pt-3">
+
+    <form method="post">
+
+   
+  <table class="table table-hover">
+  <thead>
+    <tr>
+      <th>Subject</th>
+      <th>Level</th>
+      <th>Percentage</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p id="result"></p></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Subject 2</td>
+      <td>Level 2</td>
+      <td>90%</td>
+    </tr>
+    <tr>
+      <td>Subject 3</td>
+      <td>Level 1</td>
+      <td>80%</td>
+    </tr>
+    <tr>
+      <td>Subject 4</td>
+      <td>Level 3</td>
+      <td>65%</td>
+    </tr>
+    <tr>
+      <td>Subject 5</td>
+      <td>Level 2</td>
+      <td>95%</td>
+    </tr>
+    <tr>
+      <td>Subject 6</td>
+      <td>Level 1</td>
+      <td>85%</td>
+    </tr>
+    <tr>
+      <td>Subject 7</td>
+      <td>Level 3</td>
+      <td>70%</td>
+    </tr>
+
+    <tr>
+      <td><button type="submit" class="btn btn-primary" id="myButton">Submit</button></td>
+       <td></td>
+       <td></td>
+
+    </tr>
+   
+  </tbody>
+</table>
+
+ </form>
+
+</div>
