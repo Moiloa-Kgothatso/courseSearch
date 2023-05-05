@@ -56,30 +56,3 @@ $(document).ready(function() {
     resultElement.textContent = `${selectedValue}`;
   });
 
-
-
-$('select[name="subject1"]').on('change', function () {
-    var form = $(this).closest('form');
-    var data = form.serialize();
-
-
-    var formData = $('#subject1').serialize();
-    var url = '/DownloadPDF/Download' + formData;
-
-
-    // Make an AJAX call to the server to download the PDF file
-    var xhr = new XMLHttpRequest();
-    xhr.open('GET', url, true);
-    xhr.responseType = 'blob';
-    xhr.onload = function (e) {
-        if (this.status == 200) {
-            // Create a link to the PDF file and simulate a click to download it
-            var blob = new Blob([this.response], { type: 'application/pdf' });
-            var link = document.createElement('a');
-            link.href = window.URL.createObjectURL(blob);
-            link.download = 'YourFileName.pdf';
-            link.click();
-        }
-    };
-    xhr.send();
-}

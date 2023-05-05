@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "CIvwz4sDscSTnJZ0gl/9XDTTdBzBybzQYpwc70VEL0+GOP/2zmtREtJjhBExVv+QJpzqAE5uyFDpV+27uo6svg==",
+  "dgSpecHash": "r6ZpJC3fxGGvBbSDM9cXqfJrazVvcT1XETZMKtwxdYcSzgf0xsvDO5i9BWu2PO6rn9xHY+lUpR4VzjLkErnWcQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\mahas\\Documents\\Personal Projects\\courseSearch\\courseSearch.csproj",
+  "projectFilePath": "C:\\Users\\mahas\\Documents\\personal_projects\\courseSearch\\courseSearch.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mahas\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\mahas\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

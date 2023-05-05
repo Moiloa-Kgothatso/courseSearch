@@ -32,7 +32,7 @@
   <tbody>
     <tr>
       <td>
-         <select style="width: 85%"  name="subject1" id="subject1" aria-placeholder="Select a subject">
+         <select style="width: 85%"  name="subject" id="subject1" aria-placeholder="Select a subject">
                 <option selected disabled>Select Subject</option>
                 @foreach (var item in ViewBag.subjectOptions)
                 {
@@ -44,7 +44,7 @@
       </td>
       <td>
         
-          <select class="form-select form-select-sm" aria-label=".form-select-sm example" style="width: 50%" name="level1">
+          <select class="form-select form-select-sm" aria-label=".form-select-sm example" style="width: 50%" name="level">
                 <option selected disabled>Select Level</option>
                 @for (int i = 1; i <= 7; i++)
                 {
@@ -65,7 +65,7 @@
     </tr>
     <tr>
       <td> 
-        <select style="width: 85%"  name="subject2">
+        <select style="width: 85%"  name="subject">
                 <option selected disabled>Select Subject</option>
                 @foreach (var item in ViewBag.subjectOptions)
                 {
@@ -75,7 +75,7 @@
      </td>
       <td>
         
-         <select class="form-select form-select-sm" aria-label=".form-select-sm example" style="width: 50%" name="level2">
+         <select class="form-select form-select-sm" aria-label=".form-select-sm example" style="width: 50%" name="level">
                 <option selected disabled>Select Level</option>
                 @for (int i = 1; i <= 7; i++)
                 {
@@ -257,7 +257,6 @@
 
       <tr>
       <td>
-          <h2 style="text-align:center"><button type="submit" class="btn btn-primary" onclick="downloadPDF()">Download PDF</button></h2>
                        
       </td>
       <td>

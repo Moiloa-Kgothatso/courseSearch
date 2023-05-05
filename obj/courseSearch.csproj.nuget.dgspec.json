@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\mahas\\Documents\\Personal Projects\\courseSearch\\courseSearch.csproj": {}
+    "C:\\Users\\mahas\\Documents\\personal_projects\\courseSearch\\courseSearch.csproj": {}
   },
   "projects": {
-    "C:\\Users\\mahas\\Documents\\Personal Projects\\courseSearch\\courseSearch.csproj": {
+    "C:\\Users\\mahas\\Documents\\personal_projects\\courseSearch\\courseSearch.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mahas\\Documents\\Personal Projects\\courseSearch\\courseSearch.csproj",
+        "projectUniqueName": "C:\\Users\\mahas\\Documents\\personal_projects\\courseSearch\\courseSearch.csproj",
         "projectName": "courseSearch",
-        "projectPath": "C:\\Users\\mahas\\Documents\\Personal Projects\\courseSearch\\courseSearch.csproj",
+        "projectPath": "C:\\Users\\mahas\\Documents\\personal_projects\\courseSearch\\courseSearch.csproj",
         "packagesPath": "C:\\Users\\mahas\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mahas\\Documents\\Personal Projects\\courseSearch\\obj\\",
+        "outputPath": "C:\\Users\\mahas\\Documents\\personal_projects\\courseSearch\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\mahas\\AppData\\Roaming\\NuGet\\NuGet.Config",
