@@ -1,3 +1,3 @@
-#Welcome#
+#Hello#
 
-This is gonna be my information
+This is my first repository
